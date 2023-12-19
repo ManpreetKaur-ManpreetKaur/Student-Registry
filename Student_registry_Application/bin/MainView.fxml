@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBody" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentController">
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#viewStudentList" prefHeight="40.0" prefWidth="139.0" text="View Student List" textFill="#151518">
+               <HBox.margin>
+                  <Insets left="420.0" top="65.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#addStudent" prefHeight="48.0" prefWidth="122.0" text="Add Student">
+               <HBox.margin>
+                  <Insets left="300.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Label prefHeight="34.0" prefWidth="277.0" text="Student Management List" textFill="#6f1971" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

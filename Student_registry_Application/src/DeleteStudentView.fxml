@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="48.0" layoutY="151.0" prefHeight="17.0" prefWidth="81.0" text="First Name" />
+      <Label layoutX="48.0" layoutY="108.0" text="Student ID" />
+      <TextField fx:id="DtxtStudentId" layoutX="168.0" layoutY="104.0" />
+      <TextField fx:id="DtxtStudentFirstName" layoutX="168.0" layoutY="147.0" />
+      <Button fx:id="btnDeleteStudent" layoutX="547.0" layoutY="453.0" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="39.0" prefWidth="72.0" text="Delete" />
+      <Label layoutX="320.0" layoutY="14.0" prefHeight="45.0" prefWidth="103.0" text="Student Details" />
+      <Label layoutX="48.0" layoutY="305.0" prefHeight="17.0" prefWidth="87.0" text="Enrollment Type" />
+      <RadioButton fx:id="rFEnrollmentType" layoutX="170.0" layoutY="305.0" mnemonicParsing="false" selected="true" text="Full Time">
+         <toggleGroup>
+            <ToggleGroup fx:id="DenrollmentType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rPEnrollmentType" layoutX="261.0" layoutY="305.0" mnemonicParsing="false" text="Part Time" toggleGroup="$enrollmentType" />
+      <Label layoutX="48.0" layoutY="199.0" prefHeight="17.0" prefWidth="81.0" text="Last Name" />
+      <TextField fx:id="DtxtStudentLastName" layoutX="168.0" layoutY="195.0" />
+      <Label layoutX="48.0" layoutY="245.0" prefHeight="17.0" prefWidth="81.0" text="Program" />
+      <TextField fx:id="DtxtStudentProgram" layoutX="168.0" layoutY="241.0" />
+   </children>
+</Pane>
